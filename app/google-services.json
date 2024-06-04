@@ -1,32 +1,13 @@
 {
   "project_info": {
-    "project_number": "800928324730",
-    "project_id": "opsc-poe-21a0f",
-    "storage_bucket": "opsc-poe-21a0f.appspot.com"
+    "project_number": "745261122366",
+    "project_id": "opsc-8a7de",
+    "storage_bucket": "opsc-8a7de.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:800928324730:android:94c2d289e51cf56f1cafc3",
-        "android_client_info": {
-          "package_name": "com.example.opsc7311_poe"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBExSX5rftWn55a7Gt42MsXPLc4MdKWIcI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:800928324730:android:35ccc13b5b34ee2e1cafc3",
+        "mobilesdk_app_id": "1:745261122366:android:1bc412b9101e450c71e26f",
         "android_client_info": {
           "package_name": "com.example.opsc_poe"
         }
@@ -34,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBExSX5rftWn55a7Gt42MsXPLc4MdKWIcI"
+          "current_key": "AIzaSyAYEDJoN_JRANb2K85JFmSyu21mPmGuwU8"
         }
       ],
       "services": {

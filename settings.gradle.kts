@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "OPSC7311_POE"
+rootProject.name = "OPSC_PoE"
 include(":app")
  
