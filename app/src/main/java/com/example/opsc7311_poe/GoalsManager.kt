@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 
-class Goals(private val activity: Activity) {
+class GoalsManager(private val activity: Activity) {
 
     private val database: DatabaseReference = FirebaseDatabase.getInstance().reference
 
