@@ -34,4 +34,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="minimum_daily_goal">Minimum Daily Goal: %1$d hours</string>
+    <string name="maximum_daily_goal">Maximum Daily Goal: %1$d hours</string>
+
+
 </resources>

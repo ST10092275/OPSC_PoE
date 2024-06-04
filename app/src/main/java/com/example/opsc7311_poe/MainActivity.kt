@@ -2,6 +2,10 @@ package com.example.opsc7311_poe
 
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Button
+import android.widget.EditText
+import android.widget.SeekBar
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -15,11 +19,17 @@ import com.example.opsc7311_poe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

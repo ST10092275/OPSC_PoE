@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GoalsManager">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFEB3B"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:title="Daily Goals"
+            app:titleTextColor="@color/black"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- EditText for Goal Name -->
+    <EditText
+        android:id="@+id/et_goal_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter name of the goal"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView for Minimum Goal -->
+    <TextView
+        android:id="@+id/tv_min_goal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Minimum Daily Goal: 0 hours"
+        app:layout_constraintTop_toBottomOf="@+id/et_goal_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- SeekBar for Minimum Goal -->
+    <SeekBar
+        android:id="@+id/seekBar_min_goal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="24"
+        app:layout_constraintTop_toBottomOf="@+id/tv_min_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- TextView for Maximum Goal -->
+    <TextView
+        android:id="@+id/tv_max_goal"
+        android:layout_width="0dp"
+        android:text="Maximum Daily Goal:0 hours"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_min_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- SeekBar for Maximum Goal -->
+    <SeekBar
+        android:id="@+id/seekBar_max_goal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="24"
+        app:layout_constraintTop_toBottomOf="@+id/tv_max_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btn_save_goals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Goals"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_max_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <ListView
+        android:id="@+id/GoalList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_goals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
