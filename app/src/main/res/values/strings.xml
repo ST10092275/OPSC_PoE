@@ -38,5 +38,9 @@
     <string name="minimum_daily_goal">Minimum Daily Goal: %1$d hours</string>
     <string name="maximum_daily_goal">Maximum Daily Goal: %1$d hours</string>
 
-
+    <!-- In res/values/strings.xml -->
+    <string name="save_button_text">Save Goals</string>
+    <string name="goal_name_hint">Enter name of the goal</string>
+    <string name="min_goal_text">Minimum Daily Goal: %1$d hours</string>
+    <string name="max_goal_text">Maximum Daily Goal: %1$d hours</string>
 </resources>

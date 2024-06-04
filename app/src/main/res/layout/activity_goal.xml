@@ -29,7 +29,8 @@
         android:id="@+id/et_goal_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter name of the goal"
+        android:hint="@string/goal_name_hint"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,12 +38,11 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"/>
 
-    <!-- TextView for Minimum Goal -->
     <TextView
         android:id="@+id/tv_min_goal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Minimum Daily Goal: 0 hours"
+        android:text="@string/min_goal_text"
         app:layout_constraintTop_toBottomOf="@+id/et_goal_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,8 +65,8 @@
     <TextView
         android:id="@+id/tv_max_goal"
         android:layout_width="0dp"
-        android:text="Maximum Daily Goal:0 hours"
         android:layout_height="wrap_content"
+        android:text="@string/max_goal_text"
         app:layout_constraintTop_toBottomOf="@+id/seekBar_min_goal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,12 +84,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"/>
-
     <Button
         android:id="@+id/btn_save_goals"
-        android:layout_width="0dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Save Goals"
+        android:text="@string/save_button_text"
         app:layout_constraintTop_toBottomOf="@+id/seekBar_max_goal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
