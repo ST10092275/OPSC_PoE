@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme" />
+
+    <EditText
+        android:id="@+id/etGoalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Goal Name" />
+
+    <SeekBar
+        android:id="@+id/seekbarMinGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="24" />
+    <TextView
+        android:id="@+id/tvMinGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Goal: 0 hours" />
+    <SeekBar
+        android:id="@+id/seekbarMaxGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="24" />
+    <TextView
+        android:id="@+id/tvMaxGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Goal: 0 hours" />
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No date selected"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Goal" />
+
+    <ListView
+        android:id="@+id/goalList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

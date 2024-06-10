@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:hint="Date (yyyy-mm-dd)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/startTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:hint="Start Time (HH:mm)"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/endTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="End Time (HH:mm)"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:hint="Description"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:prompt="@string/category_prompt" />
+
+    <Button
+        android:id="@+id/addPhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Photo" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/saveTimesheetEntryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Timesheet Entry"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/timesheetListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
+
